@@ -11,6 +11,7 @@
 		B3C87284280620A400FDE51E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C87283280620A400FDE51E /* ContentView.swift */; };
 		B3C87286280620AA00FDE51E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C87285280620AA00FDE51E /* Assets.xcassets */; };
 		B3C87289280620AA00FDE51E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C87288280620AA00FDE51E /* Preview Assets.xcassets */; };
+		B3C872902806213D00FDE51E /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C8728F2806213D00FDE51E /* MotionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B3C87283280620A400FDE51E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3C87285280620AA00FDE51E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3C87288280620AA00FDE51E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3C8728F2806213D00FDE51E /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				B3C87281280620A400FDE51E /* ParallaxApp.swift */,
 				B3C87283280620A400FDE51E /* ContentView.swift */,
+				B3C8728F2806213D00FDE51E /* MotionManager.swift */,
 				B3C87285280620AA00FDE51E /* Assets.xcassets */,
 				B3C87287280620AA00FDE51E /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C87284280620A400FDE51E /* ContentView.swift in Sources */,
+				B3C872902806213D00FDE51E /* MotionManager.swift in Sources */,
 				B3C87282280620A400FDE51E /* ParallaxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
