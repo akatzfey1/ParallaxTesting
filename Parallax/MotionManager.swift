@@ -9,7 +9,22 @@ import CoreMotion
 import SwiftUI
 import Foundation
 
+struct ParallaxMotionModifier: ViewModifier {
+    
+    @ObservedObject var manager: MotionManager = MotionManager()
+    var magnitude: Double
+    
+    func body(content: Content) -> some View {
+        content
+            .offset(x: CGFloat(manager.roll * magnitude), y: CGFloat(manager.pitch * magnitude))
+    }
+}
 
+extension View {
+    func parallax(magnitude: Double) -> some View {
+        modifier(ParallaxMotionModifier(magnitude: magnitude))
+    }
+}
 
 class MotionManager: ObservableObject {
     
@@ -20,7 +35,7 @@ class MotionManager: ObservableObject {
     
     init() {
         self.manager = CMMotionManager()
-        self.manager.deviceMotionUpdateInterval = 1/60
+        self.manager.deviceMotionUpdateInterval = 1/200 // Setting this higher than device spec will result in device max used
         self.manager.startDeviceMotionUpdates(to: .main) { (motionData, error) in
             guard error == nil else {
                 print(error!)
